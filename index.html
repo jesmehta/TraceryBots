@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weird Recipe Generator</title>
+  <script src="https://cdn.jsdelivr.net/gh/galaxykate/tracery/tracery.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
+      background: #fefefe;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    #output {
+      font-size: 1.2em;
+      margin-top: 1em;
+      padding: 1em;
+      background: #f4f4f4;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 2em;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      background: #e8e8e8;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d8d8d8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weird Recipe Generator</h1>
+  <div id="output">Generating recipe...</div>
+  <button onclick="generate()">Generate Another</button>
+
+  <script>
+    const grammar = tracery.createGrammar({
+      "origin": [
+        "Take #ingredient.a# and #cookMethod# it with #ingredient#.",
+        "Combine #ingredient# and #ingredient# with a pinch of #spice#.",
+        "Roast #ingredient# until golden, then add #sauce#.",
+        "Make a salad of #ingredient#, #ingredient#, and #spice#.",
+        "Serve #ingredient.a# on a bed of #ingredient# and drizzle with #sauce#."
+      ],
+      "ingredient": [
+        "banana", "okra", "tofu", "dragonfruit",
+        "squid ink", "eggplant", "marshmallow",
+        "tempeh", "broccoli", "litchi", "noodles"
+      ],
+      "cookMethod": ["boil", "fry", "roast", "grill", "ferment", "steam"],
+      "spice": ["cinnamon", "chili flakes", "mustard seeds", "cloves", "turmeric", "cardamom"],
+      "sauce": ["soy sauce", "chocolate syrup", "fish sauce", "pesto", "miso glaze"]
+    });
+
+    grammar.addModifiers(tracery.baseEngModifiers);
+
+    function generate() {
+      const recipe = grammar.flatten("#origin#");
+      document.getElementById("output").innerText = recipe;
+    }
+
+    // Generate one on load
+    generate();
+  </script>
+</body>
+</html>
