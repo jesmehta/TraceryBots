@@ -45,13 +45,29 @@ function clearAll() {
   }
 }
 
+// generate for earlier line text version
+// function generate() {
+//   let expansion = grammar.flatten('#start#');
+//   // console.log(grammar.expand('#start#'));
+//   let par = createP(expansion);
+//   let r = floor(random(100, 255));
+//   let g = floor(random(150, 255));
+//   let b = floor(random(200, 255));
+//   par.style('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
+//   par.class('text');
+// }
+
+//generate for card version
 function generate() {
-  let expansion = grammar.flatten('#start#');
-  // console.log(grammar.expand('#start#'));
-  let par = createP(expansion);
-  let r = floor(random(100, 255));
-  let g = floor(random(150, 255));
-  let b = floor(random(200, 255));
-  par.style('background-color', 'rgb(' + r + ',' + g + ',' + b + ')');
-  par.class('text');
+  const expansion = grammar.flatten('#start#');
+  const div = document.createElement('div');
+  div.className = 'card';
+
+  const r = Math.floor(Math.random() * 155 + 100);
+  const g = Math.floor(Math.random() * 105 + 150);
+  const b = Math.floor(Math.random() * 55 + 200);
+  div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+  div.textContent = expansion;
+  document.getElementById('grid').appendChild(div);
 }

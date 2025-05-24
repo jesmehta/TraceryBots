@@ -1,4 +1,25 @@
-html, body {
+/* html, body {
   background: #FFF;
 }
+ */
 
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 6px;
+  min-height: 120px;
+  font-size: 1.1em;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  transition: background 0.3s ease;
+}
