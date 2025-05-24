@@ -45,13 +45,20 @@ function setup() {
   clearButton.mousePressed(clearAll);
 }
 
-// Remove everything
+// // Remove everything
+// function clearAll() {
+//   let elements = selectAll('.text');
+//   for (let i = 0; i < elements.length; i++) {
+//     elements[i].remove();
+//   }
+// }
+
+//clear all for Grid Card version
 function clearAll() {
-  let elements = selectAll('.text');
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].remove();
-  }
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
 }
+
 
 // generate for earlier line text version
 // function generate() {
