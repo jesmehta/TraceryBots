@@ -22,14 +22,24 @@ let data = {
   	"originReply" :  ["#cooked# #greens# #portion# #plated# #cooked# #mains# #medium#"]
   }
 
-  const fonts = [
-  "'Playfair Display', serif",
-  "'Inter', sans-serif",
-  "'Fira Code', monospace",
-  "'Archivo Black', sans-serif",
-  "'Amatic SC', cursive",
-  "'Courier Prime', monospace"
+//   const fonts = [
+//   "'Playfair Display', serif",
+//   "'Inter', sans-serif",
+//   "'Fira Code', monospace",
+//   "'Archivo Black', sans-serif",
+//   "'Amatic SC', cursive",
+//   "'Courier Prime', monospace"
+// ];
+
+const fontMap = [
+  { name: 'Playfair Display', css: 'font-playfair' },
+  { name: 'Inter', css: 'font-inter' },
+  { name: 'Fira Code', css: 'font-fira' },
+  { name: 'Archivo Black', css: 'font-archivo' },
+  { name: 'Amatic SC', css: 'font-amatic' },
+  { name: 'Courier Prime', css: 'font-courier' }
 ];
+
 
 function setup() {
   noCanvas();
@@ -87,18 +97,26 @@ function clearAll() {
 //   document.getElementById('grid').appendChild(div);
 // }
 
-//cards and variable fonts
+//cards and variable fonts with custom styling
+
 function generate() {
   const expansion = grammar.flatten('#start#');
   const div = document.createElement('div');
-  div.className = 'card';
+  div.classList.add('card');
 
+  // Apply background color
   const r = Math.floor(Math.random() * 155 + 100);
   const g = Math.floor(Math.random() * 105 + 150);
   const b = Math.floor(Math.random() * 55 + 200);
   div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
-  div.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
+  // Apply random font class
+  const font = fontMap[Math.floor(Math.random() * fontMap.length)];
+  div.classList.add(font.css);
+
+  // Insert text
   div.textContent = expansion;
+
+  // Append to grid
   document.getElementById('grid').appendChild(div);
 }
