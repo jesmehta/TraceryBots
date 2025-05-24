@@ -9,7 +9,7 @@ let grammar;
 
 // Here is the grammar
 let data = {
-  	"start" :  ["#cooked.capitalize# #greens# #portion# #plated# #cooked# #mains# #medium#"],
+  	"start" :  ["#cooked.capitalize# #greens# #portion# #plated# #cooked# #mains# #medium#. #Extra#"],
   	"cooked" : ["#adverb# #action#"],
   		"adverb" : ["mildly", "roughly", "finely", "lightly", "overly","slightly","thoroughly","abysmally","ruthlessly"],
   		"action" : ["sauteed", "blanched", "stir-fried", "braised", "tossed", "fried", "steamed", "burnt", "roasted","washed"],
