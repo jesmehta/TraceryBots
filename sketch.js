@@ -1,4 +1,4 @@
-// A2Z F20
+// Started off from
 // Daniel Shiffman
 // https://github.com/shiffman/A2Z-F20
 
@@ -22,6 +22,14 @@ let data = {
   	"originReply" :  ["#cooked# #greens# #portion# #plated# #cooked# #mains# #medium#"]
   }
 
+  const fonts = [
+  "'Playfair Display', serif",
+  "'Inter', sans-serif",
+  "'Fira Code', monospace",
+  "'Archivo Black', sans-serif",
+  "'Amatic SC', cursive",
+  "'Courier Prime', monospace"
+];
 
 function setup() {
   noCanvas();
@@ -58,6 +66,21 @@ function clearAll() {
 // }
 
 //generate for card version
+// function generate() {
+//   const expansion = grammar.flatten('#start#');
+//   const div = document.createElement('div');
+//   div.className = 'card';
+
+//   const r = Math.floor(Math.random() * 155 + 100);
+//   const g = Math.floor(Math.random() * 105 + 150);
+//   const b = Math.floor(Math.random() * 55 + 200);
+//   div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+//   div.textContent = expansion;
+//   document.getElementById('grid').appendChild(div);
+// }
+
+//cards and variable fonts
 function generate() {
   const expansion = grammar.flatten('#start#');
   const div = document.createElement('div');
@@ -68,6 +91,7 @@ function generate() {
   const b = Math.floor(Math.random() * 55 + 200);
   div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
+  div.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
   div.textContent = expansion;
   document.getElementById('grid').appendChild(div);
 }
