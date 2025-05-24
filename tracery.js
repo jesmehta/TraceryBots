@@ -746,7 +746,7 @@ var tracery = {
             }
 
             this.setParent(parent);
-            $.extend(this, parsedTag);
+            Object.assign(this, parsedTag);
         },
 
         expand : function() {
