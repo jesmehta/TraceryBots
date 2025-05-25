@@ -1,0 +1,19 @@
+{
+"origin":[ "#Twinkle# #Twinkle# #Little# #Star#"],
+
+"Twinkle" : ["Twinkle", "Sparkle", "Glimmer", "Luminesce", "Shimmer"],
+"Little" : ["Little", "Big", "Ginormous", "Titanic", "Celestial", "Cosmic", "Microscopic", "Tiny", "Atomic", "Minute", "Minuscule"],
+"Star" : ["Star", "Planet", "Teacup", "Lightbulb", "Spacecraft", "Carpet", "Shoe", "Pencil"]
+
+}
+
+Glimmer Glimmer Ginormous Star.
+Glimmer Twinkle Titanic Spacecraft.
+Glimmer Sparkle Tiny Shoe.
+Luminesce Luminesce Little Star.
+Sparkle Shimmer Microscopic Spacecraft.
+Sparkle Sparkle Celestial Shoe.
+Glimmer Glimmer Minute Star.
+Shimmer Glimmer Minute Carpet.
+Twinkle Luminesce Tiny Shoe.
+Twinkle Luminesce Little Spacecraft.
