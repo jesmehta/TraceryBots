@@ -1,0 +1,11 @@
+{
+	"origin" :  ["#cooked# #greens# #portion# #plated# #cooked# #mains#" ],
+	"cooked" : ["#adverb# #action#"],
+		"adverb" : ["mildly", "roughly", "finely", "lightly", "overly"],
+		"action" : ["sauteed", "blanched", "stir-fried", "braised", "tossed", "fried", "steamed", "burnt", "roasted"],
+	"greens" : ["carrots", "broccoli", "cabbage", "onions", "aubergines", "tomatoes", "okra"],
+	"portion" : ["pieces", "shreds", "chunks", "slices", "crumbled"],
+	"plated" : ["with", "served with", "served under", "under", "plated with", "drizzled on", "layered with", "sprinkled on", "spooned beside", "poured over", "as topping on", "to garnish over" ],
+	"mains" : ["beans", "tofu", "bread", "cheese", "wheat", "rice", "potato", "moong", "rajma", "dudhi"],
+	"medium" : ["salad", "gravy", "hotpot", "soup", "filling", "bhel", "upma", "khichadi"]
+}
