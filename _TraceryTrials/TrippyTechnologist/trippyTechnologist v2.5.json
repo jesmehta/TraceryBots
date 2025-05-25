@@ -1,0 +1,187 @@
+{
+	"smart1": [
+		"smart",
+		"connected",
+		"IOT-enabled",
+		"AI powered",
+		"neural net based",
+		"machine learning enabled",
+		"block chain connected",
+		"public ledger based",
+		"crypto-backed"
+	],
+	"smart2": [
+		"magical",
+		"mutant",
+		"celestial",
+		"angelic",
+		"fey",
+		"mysterious",
+		"dark-energy",
+		"vibranium shielded",
+		"adamantium cored"
+	],
+	"object1": [
+		"egg",
+		"spoon",
+		"chair",
+		"plate",
+		"glass",
+		"pen",
+		"wine glass",
+		"champagne flute",
+		"ink pen",
+		"book",
+		"shoe",
+		"sneaker",
+		"stiletto heel",
+		"jar",
+		"jar of candy",
+		"pickle jar",
+		"hair band",
+		"hair clip",
+		"belt",
+		"pencil",
+		"bottle"
+	],
+	"data": [
+		"data",
+		"authentication",
+		""
+	],
+	"verbs": [
+		"connects to",
+		"uplinks to",
+		"powerlinks with",
+		"hotlinks with",
+		"couples with",
+		"bridges from",
+		"interfaces with",
+		"networks with",
+		"ports from",
+		"syncs with"
+	],
+	"poss": [
+		"my",
+		"your",
+		"the",
+		"the local",
+		"the neighbourhood",
+		"your spouse's",
+		"your kids'",
+		"your parents'",
+		"your kids'",
+		"your spoouse's parents'"
+	],
+	"object2": [
+		"fridge",
+		"TV",
+		"microwave",
+		"washing machine",
+		"car",
+		"home",
+		"coworking space"
+	],
+	"object3":[
+		"international space station",
+		"seat of government",
+		"capital city",
+		"country escape",
+		"community pool",
+		"beach shack"
+	],
+	"cloud": [
+		"the cloud",
+		"a data hub",
+		"the server",
+		"a server farm",
+		"a database",
+		"a pendrive",
+		"a Google Drive",
+		"Dropbox"
+	],
+	"cloud2": [
+		"the cloud",
+		"a data hub",
+		"the server",
+		"a server farm",
+		"a database",
+		"a tape drive",
+		"a pendrive",
+		"a Google Drive",
+		"Dropbox",
+		"a cupboard full of printouts",
+		"a hand written journal",
+		"the reptilian fossil record",
+		"geological strata"
+	],
+	"protocol": [
+		"bluetooth",
+		"HTTPS",
+		"5G",
+		"LoRaWAN",
+		"radio"
+	],
+	"protocol2": [
+		"cosmic ray bursts",
+		"gamma ray modulation",
+		"FM radio",
+		"disturbances in the force",
+		"telepathic mind-meld",
+		"inner ear bone conduction",
+		"screaming into the void"
+	],
+	"objective": [
+		"to make my omelettes better",
+		"to improve the quality of the local icecream",
+		"to increase the efficiency of mental breakdown inducement",
+		"to exploit the lowermost classes of society for better profit margins",
+		"to induce the complete breakdown of critical thinking",
+		"to prevent falls in elderly people",
+		"to safeguard online financial transactions",
+		"to find inner peace",
+		"to trigger world war 3",
+		"to prevent world war 3"
+	],
+	"agency": [
+		"the service provider",
+		"the ISP",
+		"the government",
+		"the app",
+		"the site",
+		"the trackers",
+		"the app store",
+		"Google",
+		"Apple",
+		"Facebook",
+		"Amazon",
+		"the marketplace",
+		"the platform"
+	],
+	"agency2": [
+		"Russian spies",
+		"hackers on the dark web",
+		"Anonymous"
+	],
+	"story1":
+	[
+		"#smart1.capitalize# #object1# that #verbs# #poss# #object2# to #cloud# using #protocol# #objective# while also enabling #agency# #objective#"
+	],
+	"story2": [
+		"#smart2.capitalize# #object1# that #verbs# #poss# #object3# to #cloud2# using #protocol2# #objective# while also enabling #agency2# #objective#"
+	],
+"reply" : [
+"What do you think of", "We would like to invite you to the beta test of", "Would you like to be an early adopter of"
+],
+	"origin": [
+		"#story1#",
+		"#story1#",
+		"#story2#"
+	]
+}
+
+
+{
+	"hello":"hello there!",
+	".":"#reply# #origin#"
+}
