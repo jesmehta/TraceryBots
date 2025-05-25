@@ -1,0 +1,22 @@
+//Trippy Gourmet @gourmetTrippy on Twitter
+
+{
+	"origin" :  ["#cooked.capitalize# #greens# #portion# #plated# #cooked# #mains# #medium#"],
+	"cooked" : ["#adverb# #action#"],
+		"adverb" : ["mildly", "roughly", "finely", "lightly", "overly","slightly","thoroughly","abysmally","ruthlessly"],
+		"action" : ["sauteed", "blanched", "stir-fried", "braised", "tossed", "fried", "steamed", "burnt", "roasted","washed"],
+	"greens" : ["carrot", "broccoli", "cabbage", "onion", "aubergine", "tomato", "okra","peas"],
+	"portion" : ["pieces", "shreds", "chunks", "slices", "crumbs"],
+	"plated" : ["with", "served with", "served under", "under", "plated with", "drizzled on", "layered with", "sprinkled on", "spooned beside", "poured over", "as topping on", "to garnish over" ],
+	"mains" : ["bean", "tofu", "bread", "cheese", "wheat sprout", "rice", "potato", "moong", "rajma", "dudhi","tinda","cauliflower", "vangi","tuvar","chana"],
+	"medium" : ["salad", "gravy", "hotpot", "soup", "filling", "bhel", "upma", "khichadi", "bhurji", "sandwich", "pizza","achaar","masala papad"],
+	"Extra" : ["Malai maar ke", "Made in Amul butter", "Chutney extra", "Sambar upar se", "Makkhan maar ke", "Sukha puri bhi", "Aloo slice bhi", "Extra onion", "Extra garlic", "Tel zyada hogaya"],
+	"originReply" :  ["#cooked# #greens# #portion# #plated# #cooked# #mains# #medium#"]
+}
+
+
+//Reply
+{
+	"hello":"hello there!",
+	".":"Have you ever tried #originReply#? Pics or it didn't happen"
+}
